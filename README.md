@@ -1,6 +1,43 @@
 [![Build Status](https://github.com/TexasDigitalLibrary/Vireo/workflows/Build/badge.svg)](https://github.com/TexasDigitalLibrary/Vireo/actions?query=workflow%3ABuild)
 [![Coverage Status](https://coveralls.io/repos/github/TexasDigitalLibrary/Vireo/badge.svg)](https://coveralls.io/github/TexasDigitalLibrary/Vireo)
 
+# pul-vireo
+
+This is a Princeton fork of Vireo 4, customized for the Princeton environment. This is the application that runs ThesisCentral, Princeton's system for undergraduate thesis submission for library accessioning. 
+
+## Deploy process
+**ALERT** We do not have a system for automated tests set up, so changes to this application should be minimal, and limited as much as possible to style and configuration changes.
+
+1. Compile a new application:
+```
+$ mvn clean package -DskipTests -Dproduction -Dassets.uri=file:/opt/vireo/ -Dconfig.uri=file:/opt/vireo/config/
+```
+
+2. This will produce a war file. Copy it to the server.
+```
+cp target/vireo-4.1.0.war pulsys@vireo-staging1.princeton.edu:/tmp
+```
+
+3. Stop Tomcat8
+```
+ssh pulsys@vireo-staging1.princeton.edu
+sudo service tomcat8 stop
+```
+
+4. Replace the currently running application with the new .war file
+```
+cd /var/lib/tomcat8/webapps
+sudo rm -rf ROOT ROOT.war
+mv /tmp/vireo-4.1.0.war ROOT.war
+```
+
+5. Restart Tomcat
+```
+sudo service tomcat8 start
+```
+
+At this point you should be able to visit https://vireo-staging.princeton.edu and see the application with your changes.
+
 # Vireo 4
 
 Vireo is a turnkey Electronic Thesis and Dissertation (ETD) Management System.  Starting with the 4.x release, Vireo offers fully customizable workflows and controlled vocabularies.
