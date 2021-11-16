@@ -4,15 +4,15 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <name>Vireo</name>
-  <description>Vireo Thesis and Dissertation Submission System</description>
-  <version>4.1.0</version>
-  <groupId>org.tdl</groupId>
-  <artifactId>vireo</artifactId>
+  <name>Princeton Thesis Central</name>
+  <description>Thesis and Dissertation Submission System</description>
+  <version>1.0.0</version>
+  <groupId>org.pul</groupId>
+  <artifactId>pul-vireo</artifactId>
   <url>https://github.com/TexasDigitalLibrary/Vireo</url>
   <organization>
-    <name>TDL</name>
-    <url>http://www.tdl.org</url>
+    <name>Princeton University Library</name>
+    <url>https://library.princeton.edu/</url>
   </organization>
 
   <parent>
