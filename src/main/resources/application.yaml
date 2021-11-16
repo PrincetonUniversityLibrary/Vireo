@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 8080
   contextPath:
 
 
@@ -95,7 +95,7 @@ info:
 
 
 app:
-  url: http://localhost:9000
+  url: http://localhost:8080
 
   # value generated from property assets.uri
   # either defined in pom.xml or via package argument
@@ -183,5 +183,3 @@ theme:
   # define the location of sass/css files 
   default.css: sass/app.scss
   cacheReloadUrl: ${app.url}/wro/wroAPI/reloadCache
-
-
