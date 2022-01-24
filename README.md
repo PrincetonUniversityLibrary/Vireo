@@ -10,3 +10,4 @@ This application is deployed via ansible, so that it can be recompiled and deplo
 2. In `princeton_ansible` edit `group_vars/vireo/staging.yml` 
 3. Set the variable `github_branch`: `github_branch: 'shibboleth_auth'`
 4. Run the playboook
+
