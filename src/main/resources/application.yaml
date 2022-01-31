@@ -114,8 +114,9 @@ app:
   documentType.rename: PRIMARY
 
   # edu.tamu.weaver.auth.service.UserCredentialsService
-  authority.admins: admin@tdl.org,aggieJack@tamu.edu
-  
+  # We *should* be able to override this value in the external config file, but that
+  # isn't working, for unknown reasons.
+  authority.admins: bs3097@princeton.edu, jrg5@princeton.edu, hc8719@princeton.edu, kl37@princeton.edu
   
   security:
     # edu.tamu.weaver.auth.service.CryptoService
@@ -143,7 +144,6 @@ app:
   
   # edu.tamu.weaver.utility.HttpUtility
   http.timeout: 10000
-
 
 # edu.tamu.weaver.token.service.TokenService
 auth:
