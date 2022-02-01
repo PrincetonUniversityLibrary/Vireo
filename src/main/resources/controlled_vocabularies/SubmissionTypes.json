@@ -3,42 +3,12 @@
   "isEntityProperty":false,
   "dictionary":[
     {
-      "name":"Performance Piece",
-      "definition":"a live artistic performance",
-      "identifier":""
-    },
-    {
-      "name":"Thesis",
+      "name":"Home Department Thesis",
       "definition":"",
       "identifier":""
     },
     {
-      "name":"Dissertation",
-      "definition":"",
-      "identifier":""
-    },
-    {
-      "name":"Honors Thesis",
-      "definition":"",
-      "identifier":""
-    },
-    {
-      "name":"Project Report",
-      "definition":"",
-      "identifier":""
-    },
-    {
-      "name":"Capstone Project",
-      "definition":"",
-      "identifier":""
-    },
-    {
-      "name":"Project Capstone",
-      "definition":"",
-      "identifier":""
-    },
-    {
-      "name":"Treatise",
+      "name":"Certificate Program Thesis",
       "definition":"",
       "identifier":""
     }

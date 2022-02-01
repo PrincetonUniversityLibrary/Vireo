@@ -1,14 +1,5 @@
 [
     {
-        "name": "NONE"
-    },
-    {
         "name": "UNDERGRADUATE"
-    },
-    {
-        "name": "MASTERS"
-    },
-    {
-        "name": "DOCTORAL"
     }
 ]
