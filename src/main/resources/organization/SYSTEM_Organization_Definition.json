@@ -1,6 +1,6 @@
 {
-  "name":"Institution",
-  "acceptsSubmissions": false,
+  "name":"Princeton University",
+  "acceptsSubmissions": true,
   "category":{
     "name":"System"
   },
