@@ -61,10 +61,12 @@ spring:
     #database-platform: org.hibernate.dialect.PostgreSQLDialect
     # MySQL
     #database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-  
     generate-ddl: true
     show-sql: false
-    hibernate.ddl-auto: create-drop
+    ## !!! WARNING setting hibername.ddl-auto to "create-drop" will wipe out the
+    ## database when the application restarts
+    # hibernate.ddl-auto: create-drop
+    hibernate.ddl-auto: update
     properties.hibernate.event.merge.entity_copy_observer: allow
 
   thymeleaf:
