@@ -1,7 +1,7 @@
 {
   "application":[
     {
-      "submissions_open":false
+      "submissions_open":true
     },
     {
       "allow_multiple_submissions":false
