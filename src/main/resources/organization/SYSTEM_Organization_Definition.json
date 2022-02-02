@@ -416,25 +416,6 @@
           "usage":"",
           "help":"Enter a phone number where you can be reached.",
           "gloss": "Current Phone"
-        },
-        {
-          "fieldPredicate":{
-            "value":"current_address",
-            "documentTypePredicate":false
-          },
-          "originatingWorkflowStep":{
-            "name":"Verify Personal Information"
-          },
-          "inputType":{
-            "name":"INPUT_TEXTAREA"
-          },
-          "repeatable":false,
-          "overrideable":true,
-          "enabled":true,
-          "optional":true,
-          "usage":"",
-          "help":"Enter an address where you can be reached.",
-          "gloss": "Current Address"
         }
       ]
     },
